@@ -143,17 +143,17 @@
 
     <style>
         :root {
-            --cream: #faf6ef;
-            --ivory: #fffaf0;
-            --parchment: #f3ead9;
-            --brown: #5a3e2b;
-            --brown-light: #8b6b4f;
-            --burgundy: #7a3030;
-            --gold: #b8923d;
-            --gold-soft: #d4b878;
-            --text: #3a2e22;
-            --muted: #6b5d4f;
-            --border: #e3d5b8;
+            --cream: #f4f2ec;
+            --ivory: #fdfbf6;
+            --parchment: #dce3dd;
+            --brown: #3d5a4d;
+            --brown-light: #6b8476;
+            --burgundy: #b06644;
+            --gold: #c47e5c;
+            --gold-soft: #d9a588;
+            --text: #2a2f2d;
+            --muted: #5a6661;
+            --border: #d4d1c6;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -274,13 +274,13 @@
         .btn-primary {
             background: var(--burgundy);
             color: var(--ivory);
-            box-shadow: 0 4px 14px rgba(122, 48, 48, 0.25);
+            box-shadow: 0 4px 14px rgba(176, 102, 68, 0.25);
         }
         .btn-primary:hover {
-            background: #8e3838;
+            background: #c47552;
             text-decoration: none;
             transform: translateY(-2px);
-            box-shadow: 0 6px 18px rgba(122, 48, 48, 0.35);
+            box-shadow: 0 6px 18px rgba(176, 102, 68, 0.35);
         }
         .btn-outline {
             background: transparent;
@@ -296,9 +296,9 @@
         /* Hero */
         .hero {
             background:
-                linear-gradient(rgba(250, 246, 239, 0.92), rgba(250, 246, 239, 0.96)),
-                radial-gradient(circle at 20% 30%, rgba(184, 146, 61, 0.12), transparent 40%),
-                radial-gradient(circle at 80% 70%, rgba(122, 48, 48, 0.08), transparent 40%);
+                linear-gradient(rgba(244, 242, 236, 0.92), rgba(244, 242, 236, 0.96)),
+                radial-gradient(circle at 20% 30%, rgba(196, 126, 92, 0.14), transparent 40%),
+                radial-gradient(circle at 80% 70%, rgba(61, 90, 77, 0.1), transparent 40%);
             padding: 5rem 0 5.5rem;
             text-align: center;
             position: relative;
@@ -483,8 +483,8 @@
         /* Pizza workshop */
         .pizza-section {
             background:
-                linear-gradient(rgba(255, 250, 240, 0.94), rgba(255, 250, 240, 0.98)),
-                radial-gradient(circle at 90% 10%, rgba(184, 146, 61, 0.2), transparent 50%);
+                linear-gradient(rgba(253, 251, 246, 0.94), rgba(253, 251, 246, 0.98)),
+                radial-gradient(circle at 90% 10%, rgba(196, 126, 92, 0.22), transparent 50%);
         }
         .pizza-grid {
             display: grid;
@@ -507,14 +507,14 @@
         }
         .pizza-highlights strong { color: var(--brown); font-weight: 700; }
         .pizza-visual {
-            background: linear-gradient(135deg, #d97757 0%, #b8923d 100%);
+            background: linear-gradient(135deg, #d97757 0%, #c47e5c 100%);
             aspect-ratio: 1/1;
             border-radius: 50%;
             display: grid;
             place-items: center;
             font-size: 7rem;
             color: var(--ivory);
-            box-shadow: 0 20px 50px rgba(184, 146, 61, 0.3);
+            box-shadow: 0 20px 50px rgba(196, 126, 92, 0.3);
             position: relative;
         }
         .pizza-visual::after {
@@ -623,7 +623,7 @@
 
         /* Final CTA */
         .final-cta {
-            background: linear-gradient(135deg, var(--brown) 0%, #6b4a30 100%);
+            background: linear-gradient(135deg, var(--brown) 0%, #5a7567 100%);
             color: var(--ivory);
             text-align: center;
             padding: 5rem 0;
@@ -667,8 +667,8 @@
 
         /* Footer */
         footer {
-            background: #2d2014;
-            color: #c9b99a;
+            background: #1f2e27;
+            color: #a8b5ae;
             padding: 2.5rem 0 2rem;
             text-align: center;
             font-size: 0.9rem;
@@ -683,7 +683,7 @@
         footer .footer-meta {
             margin-top: 1rem;
             font-size: 0.82rem;
-            color: #8a7a5f;
+            color: #7a857f;
         }
 
         /* Responsive */
@@ -694,7 +694,10 @@
             .pizza-visual { max-width: 280px; margin: 0 auto; font-size: 5rem; }
             .services, .why-grid { grid-template-columns: 1fr; gap: 1.25rem; }
             .audience { grid-template-columns: repeat(2, 1fr); }
-            nav ul { gap: 1rem; font-size: 0.9rem; }
+            nav ul { gap: 0.9rem; font-size: 0.88rem; flex-wrap: nowrap; }
+            .site-header .container { gap: 0.8rem; }
+            .logo { font-size: 1.3rem; }
+            .logo-mark { width: 30px; height: 30px; font-size: 0.95rem; }
             .hero { padding: 3.5rem 0 4rem; }
             .phone-big { font-size: 1.6rem; padding: 0.8rem 1.4rem; }
             .top-bar { font-size: 0.82rem; }
@@ -728,8 +731,7 @@
             <ul>
                 <li><a href="#despre">Despre</a></li>
                 <li><a href="#servicii">Servicii</a></li>
-                <li><a href="#atelier">Atelier Pizza</a></li>
-                <li><a href="#intrebari">Intrebari frecvente</a></li>
+                <li><a href="#atelier">Atelier</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
